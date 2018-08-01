@@ -33,7 +33,8 @@ While 1
 			$chemin_fse = FileSelectFolder("choisir le chemin du dossier FSE","C:\pyxvital")
 			GUICtrlSetData($txt_chemin,$chemin_fse)
 			GUICtrlSetData($lst_praticien,"")
-			$liste_praticiciens = _FileListToArray($chemin_fse&"\","*","2")
+;~ 			$liste_praticiciens = _FileListToArray($chemin_fse&"\","*","2")
+			$liste_praticiciens = _FileListToArrayRec($chemin_fse,"*|*bak;*old",2,0,1)
 			For $i = 1 To UBound($liste_praticiciens) - 1
 				GUICtrlSetData($lst_praticien,$liste_praticiciens[$i])
 			Next
@@ -44,7 +45,6 @@ While 1
 			$liste_fichiers = _FileListToArray($chemin_fichiers,"*.hif")
 			for $i=1 to UBound($liste_fichiers) - 1
 				_ReplaceStringInFile($chemin_fichiers&"\"& $liste_fichiers[$i],"Erreur FSE = sans ARL","")
-			;MsgBox(1,"",$chemin_fichiers&"\"& $liste_fichiers[$i])
 			Next
 			MsgBox(1,"","fin moulinettes")
 	EndSwitch
