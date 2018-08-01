@@ -40,7 +40,7 @@ While 1
 			Next
 
 		Case $btn_epuration_lot
-
+			Run("c:\trilog\soft\epuration.exe")
 		Case $btn_lot_rouge
 			$liste_fichiers = _FileListToArray($chemin_fichiers,"*.hif")
 			for $i=1 to UBound($liste_fichiers) - 1
