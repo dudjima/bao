@@ -117,5 +117,33 @@
 			</properties>
 			<components/>
 		</object>
+		<object type="TAProgress" name="Progress1">
+			<properties>
+				<property name="Left" vt="Int8">16</property>
+				<property name="Top" vt="Int16">192</property>
+				<property name="Width" vt="Int16">246</property>
+				<property name="Height" vt="Int8">17</property>
+				<property name="TabOrder" vt="Int8">6</property>
+				<property name="CtrlStyle" vt="Int32">1342308352</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components/>
+		</object>
+		<object type="TAList" name="lst_tache">
+			<properties>
+				<property name="Left" vt="Int8">8</property>
+				<property name="Top" vt="Int16">216</property>
+				<property name="Width" vt="Int16">257</property>
+				<property name="Height" vt="Int16">201</property>
+				<property name="Enabled" vt="False">False</property>
+				<property name="ItemHeight" vt="Int8">13</property>
+				<property name="TabOrder" vt="Int8">7</property>
+				<property name="CtrlStyle" vt="Int32">1352859651</property>
+				<property name="CtrlExStyle" vt="Int16">512</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components/>
+		</object>
 	</components>
 </object>
