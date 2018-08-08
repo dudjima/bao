@@ -36,7 +36,7 @@ if $ini_pyxvital == 0 Then
 	_FileWriteLog($chemin_logs, "pyxvital.ini non trouve /:  "& $chemin_pyxvital_ini)
 	MsgBox(0, "Erreur = 0", "Le programme ne trouve pas de pyxvital installé sur le poste")
 Else
-	$chemin_pyx =  StringTrimRight($ini_pyxvital,6)
+	$chemin_pyx =  	StringTrimRight($ini_pyxvital,6)
 	$chemin_fse =	StringTrimRight($ini_pyxvital,2)
 	_FileWriteLog($chemin_logs, "Chemin FSE dans pyxvital.ini = " & $chemin_pyx)
 EndIf
@@ -45,7 +45,7 @@ GUICtrlSetData($txt_chemin, $chemin_fse)
 $liste_praticiciens = _FileListToArrayRec($chemin_fse, "*|*bak;*old", 2, 0, 1)
 
 For $i = 1 To $liste_praticiciens[0]
-	GUICtrlSetData($lst_praticien,$liste_praticiciens[$i])
+	GUICtrlSetData($lst_praticien, $liste_praticiciens[$i])
 Next
 
 While 1
