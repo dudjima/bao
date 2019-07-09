@@ -21,7 +21,7 @@
 #include "..\constantes.au3"
 
 $chemin_fse		= ""
-$chemin_logs 	= $dossier_logs & "\bao_logs.log"
+$chemin_logs 	= $dossier_logs & "\"& _NowDate &"-bao_logs.log"
 $dossier_existe = FileExists($dossier_logs)
 if $dossier_existe = 0 Then
 	DirCreate($dossier_logs)
